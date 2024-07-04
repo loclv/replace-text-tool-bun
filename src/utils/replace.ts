@@ -1,15 +1,15 @@
-import { promises as fs } from "fs";
+import { promises as fs } from 'fs';
 
-export const replaceTextInFile = async (
+export const replaceTextInAFile = async (
 	filePath: string,
 	searchText: string,
 	replaceText: string,
 ) => {
-	console.log("filePath", filePath);
+	console.log('filePath', filePath);
 
 	try {
 		// Read the file content
-		const fileContent = await fs.readFile(filePath, "utf-8");
+		const fileContent = await fs.readFile(filePath, 'utf-8');
 
 		// for debug
 		// console.log("fileContent", fileContent);
@@ -19,13 +19,13 @@ export const replaceTextInFile = async (
 
 		if (result !== fileContent) {
 			// Write the updated content back to the file
-			await fs.writeFile(filePath, result, "utf-8");
+			await fs.writeFile(filePath, result, 'utf-8');
 
 			console.log(
 				`🌟 - Replaced "${searchText}" with "${replaceText}" in file: ${filePath}`,
 			);
 		} else {
-			console.log("☘️ - Nothing to replace!");
+			console.log('☘️ - Nothing to replace!');
 		}
 	} catch (error) {
 		console.error(`Error processing file ${filePath}:`, error);

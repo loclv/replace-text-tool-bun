@@ -1,21 +1,22 @@
 {
-  "name": "replace-text-tool-bun",
-  "module": "src/index.ts",
-  "type": "module",
-  "scripts": {
-    "replace": "bun src/index.ts",
-    "arr": "bun src/replace-arr.ts"
-  },
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.5.0"
-  },
-  "engines": {
-    "npm": "Please use Bun",
-    "yarn": "Please use Bun",
-    "pnpm": "Please use Bun",
-    "bun": ">=1.1.18"
-  }
+	"name": "replace-text-tool-bun",
+	"module": "src/index.ts",
+	"type": "module",
+	"scripts": {
+		"replace": "bun src/index.ts",
+		"arr": "bun src/replace-arr.ts",
+		"f": "biome format --fix"
+	},
+	"devDependencies": {
+		"@types/bun": "latest"
+	},
+	"peerDependencies": {
+		"typescript": "^5.5.0"
+	},
+	"engines": {
+		"npm": "Please use Bun",
+		"yarn": "Please use Bun",
+		"pnpm": "Please use Bun",
+		"bun": ">=1.1.18"
+	}
 }
