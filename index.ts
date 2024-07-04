@@ -13,7 +13,7 @@ const replaceTextInFile = async (
 		const fileContent = await fs.readFile(filePath, "utf-8");
 
 		// for debug
-		console.log("fileContent", fileContent);
+		// console.log("fileContent", fileContent);
 
 		// Replace all occurrences of the search text with the replace text
 		const result = fileContent.split(searchText).join(replaceText);
