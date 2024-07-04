@@ -7,6 +7,10 @@ Replacement configuration:
 - Match case insensitive: uppercase and lowercase letters are treated as distinct. For example, "Old" is not replaced with "old".
 - Not match whole word. For example, "oldTextTest" is replaced with "newTextTest".
 
+TODO:
+
+- Support nested folders
+
 ## Usage
 
 To install dependencies:
