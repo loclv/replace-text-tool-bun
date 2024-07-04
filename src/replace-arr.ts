@@ -8,6 +8,15 @@ const replaceTextInFiles = async (
 	searchTexts: string[],
 	replaceTexts: string[],
 ) => {
+	// validation
+	if (searchTexts.length !== replaceTexts.length) {
+		console.error(
+			`🍓 - Replacing texts length must be same with searching texts length! searchTexts.length: ${searchTexts.length}, replaceTexts.length: ${replaceTexts.length}`,
+		);
+
+		return;
+	}
+
 	for (let i = 0; i < searchTexts.length; i++) {
 		const searchText = searchTexts[i];
 		const replaceText = replaceTexts[i];
