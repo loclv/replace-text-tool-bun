@@ -2,6 +2,10 @@
   "name": "replace-text-tool-bun",
   "module": "index.ts",
   "type": "module",
+  "scripts": {
+    "replace": "bun index.ts",
+    "arr": "bun replace-arr.ts"
+  },
   "devDependencies": {
     "@types/bun": "latest"
   },

@@ -28,4 +28,10 @@ git diff
 # expected result is `oldText` had been replaced.
 ```
 
+Replace array of text:
+
+```bash
+bun arr
+```
+
 This project was created using `bun init` in bun v1.1.18. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.

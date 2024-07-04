@@ -3,4 +3,6 @@ export const testArr = [
 	"newText",
 	"OldText",
 	"oldTextTest",
+	"flower",
+	"💮",
 ] as const;
