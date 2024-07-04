@@ -20,11 +20,16 @@ To install dependencies:
 bun i
 ```
 
-To run:
+You can use environment variables to configure the target path outside or inside of this project.
+For example, `DIR=/Users/name/w/project`.
 
 ```bash
 cp .env.example .env
+```
 
+To run:
+
+```bash
 bun run index.ts
 
 git diff
