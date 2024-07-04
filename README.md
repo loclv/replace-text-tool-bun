@@ -2,6 +2,11 @@
 
 A text replacement tool that replaces text with other text in the source files instead of replacing with editor.
 
+Replacement configuration:
+
+- Match case insensitive: uppercase and lowercase letters are treated as distinct. For example, "Old" is not replaced with "old".
+- Not match whole word. For example, "oldTextTest" is replaced with "newTextTest".
+
 ## Usage
 
 To install dependencies:
