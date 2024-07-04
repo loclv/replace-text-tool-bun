@@ -16,7 +16,7 @@ const replaceTextInFile = async (
 		// console.log("fileContent", fileContent);
 
 		// Replace all occurrences of the search text with the replace text
-		const result = fileContent.split(searchText).join(replaceText);
+		const result = fileContent.replaceAll(searchText, replaceText);
 
 		// Write the updated content back to the file
 		await fs.writeFile(filePath, result, "utf-8");
