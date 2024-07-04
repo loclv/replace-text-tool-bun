@@ -1,5 +1,6 @@
 import { promises as fs } from "fs";
 import { join } from "path";
+import { directoryPath } from "./utils/constant";
 
 const replaceTextInFile = async (
 	filePath: string,
@@ -73,10 +74,9 @@ const replaceTextInFiles = async (
 
 console.log("Start!");
 
-// Example usage:
-// Replace 'oldText' with 'newText' in all files in the 'exampleDir' directory
+// Replace 'oldText' with 'newText' in all files in the directory
 replaceTextInFiles(
-	"exampleDir",
+	directoryPath,
 	["oldText", "flower", "💮"],
 	["newText", "lotus", "🧘"],
 );

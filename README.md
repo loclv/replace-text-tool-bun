@@ -23,6 +23,8 @@ bun i
 To run:
 
 ```bash
+cp .env.example .env
+
 bun run index.ts
 
 git diff
